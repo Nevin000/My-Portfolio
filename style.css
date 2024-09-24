@@ -380,36 +380,36 @@ a.btn:nth-child(2)::before {
   transform: translateY(-15px);
 }
 
-.service-icon{
-    border: 2px solid var(--hover-color);
-    padding: 2rem;
-    background: var(--bg-color);
-    display: flex;
-    align-items: center;
-    font-size: 3rem;
-    border-radius: 50%;
-    position: relative;
-    color: var(--hover-color);
-    box-shadow: var(--neon-box-shadow);
-    outline: 3px solid var(--bg-color);
+.service-icon {
+  border: 2px solid var(--hover-color);
+  padding: 2rem;
+  background: var(--bg-color);
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  border-radius: 50%;
+  position: relative;
+  color: var(--hover-color);
+  box-shadow: var(--neon-box-shadow);
+  outline: 3px solid var(--bg-color);
 }
 
 .section-box h3 {
-    margin-top: 10px;
-    font-size: 1.5rem;
+  margin-top: 10px;
+  font-size: 1.5rem;
 }
 
 .section-box p {
-    margin: .5rem 0 1.5rem 0;
-    font-weight: 300;
-    letter-spacing: 1px;
-    color: #bdbdbd;
-    line-height: 1.6;
+  margin: 0.5rem 0 1.5rem 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #bdbdbd;
+  line-height: 1.6;
 }
 
 /* Skill section css---------------------------------------------------------------- */
-.skills{
-    background: var(--secon-bg-color);
+.skills {
+  background: var(--secon-bg-color);
 }
 
 .skill-main {
@@ -420,7 +420,7 @@ a.btn:nth-child(2)::before {
   grid-column-gap: 50px;
 }
 
-.skill-bar{
+.skill-bar {
   margin-bottom: 2.3rem;
 }
 
@@ -430,14 +430,14 @@ a.btn:nth-child(2)::before {
   text-align: center;
 }
 
-.skill-left .skill-bar .info{
+.skill-left .skill-bar .info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
 }
 
-.skill-left .skill-bar .bar{
+.skill-left .skill-bar .bar {
   width: 100%;
   height: 10px;
   background-color: var(--bg-color);
@@ -445,7 +445,7 @@ a.btn:nth-child(2)::before {
   position: relative;
 }
 
-.skill-bar .bar span{
+.skill-bar .bar span {
   width: 50%;
   height: 100%;
   position: absolute;
@@ -455,65 +455,65 @@ a.btn:nth-child(2)::before {
   box-shadow: var(--neon-box-shadow);
 }
 
-.skill-bar .bar .html{
+.skill-bar .bar .html {
   width: 80%;
   animation: html 2s;
 }
 
-.skill-bar .bar .figma{
+.skill-bar .bar .figma {
   width: 90%;
   animation: figma 3s;
 }
 
-.skill-bar .bar .javascript{
+.skill-bar .bar .javascript {
   width: 70%;
   animation: javascript 4s;
 }
 
-.skill-bar .bar .css{
+.skill-bar .bar .css {
   width: 90%;
   animation: css 5s;
 }
 
-.skill-bar .bar .php{
+.skill-bar .bar .php {
   width: 70%;
   animation: php 6s;
 }
 
-.skill-bar .bar .java{
+.skill-bar .bar .java {
   width: 75%;
   animation: java 7s;
 }
 
-.skill-bar .bar .react{
+.skill-bar .bar .react {
   width: 80%;
   animation: react 8s;
 }
 
-.skill-bar .bar .node{
+.skill-bar .bar .node {
   width: 75%;
   animation: node 9s;
 }
 
 /* Skill Right */
-.professional{
+.professional {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.box{
+.box {
   position: relative;
   margin: 10px 0;
   flex: 1 1 15rem;
 }
 
-.box .text{
+.box .text {
   text-align: center;
   color: #fff;
   font-size: 1rem;
 }
 
-.box .text big{
+.box .text big {
   font: 400;
   letter-spacing: 1px;
   position: absolute;
@@ -522,12 +522,12 @@ a.btn:nth-child(2)::before {
   transform: translate(-50%, -50%);
 }
 
-.box .text small{
+.box .text small {
   display: block;
   font-weight: 600;
 }
 
-.circle{
+.circle {
   width: 100%;
   height: 120px;
   display: flex;
@@ -535,25 +535,145 @@ a.btn:nth-child(2)::before {
   align-items: center;
 }
 
-.circle .points{
+.circle .points {
   width: 2px;
   height: 10px;
   background-color: var(--bg-color);
   position: absolute;
   border-radius: 3px;
-  transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
-  
+  transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
 }
 
-.point.marked{
+.point.marked {
   animation: glow 0.04s linear forwards;
-  animation-delay: calc(var(--i)*0.05s);
+  animation-delay: calc(var(--i) * 0.05s);
 }
 
 .points.active {
   background-color: var(--hover-color);
   box-shadow: var(--neon-box-shadow);
 }
+
+/* Portfolio section css---------------------------------------------------------------- */
+
+.fillter-buttons {
+  margin: 2rem;
+  text-align: center;
+}
+
+.fillter-buttons .btn {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin-left: 1.3rem;
+  color: var(--text-color);
+}
+
+.fillter-buttons .btn:hover {
+  color: var(--hover-color);
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.port-box {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #292e33;
+  display: flex;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  border: 2px solid var(--hover-color);
+  box-shadow: var(--neon-box-shadow);
+  flex-direction: column;
+  height: 300px;
+  width: 350px;
+}
+
+.port-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.port-images img {
+  width: 100%;
+  opacity: 0.5s;
+  transition: 0.5s;
+  height: 100%;
+  object-fit: cover;
+}
+
+.port-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), #12f7ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 2rem;
+  transition: 0.5s;
+}
+
+.port-box:hover .port-content {
+  opacity: 1;
+}
+
+.port-box:hover .port-images img {
+  transform: scale(1.1);
+}
+
+.port-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.port-content p {
+  font-size: 0.65rem;
+  margin: 5px 0 15px 0;
+}
+
+.port-content a {
+  background: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--hover-color);
+  outline: 2px solid #fff;
+}
+
+.port-content a i {
+  font-size: 1.3rem;
+  color: var(--secon-bg-color);
+}
+
+
+
+
+
+
+
+
+
 
 
 

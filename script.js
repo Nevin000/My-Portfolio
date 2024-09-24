@@ -58,3 +58,6 @@ circles.forEach((elem) => {
     pointsMarked[i].classList.add("active");
   }
 });
+
+// mix it up portfolio section//////
+var mixer = mixitup('.portfolio-gallery');
